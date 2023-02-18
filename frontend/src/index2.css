@@ -1,0 +1,70 @@
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -moz-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -o-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    width: 410px;
+    text-align: center;
+    background-color: #ffffff;
+    opacity: 1;
+    visibility: visible;
+    margin-top: 100px;
+    z-index: -1;
+  }
+  #sign-popup.active.popup,
+  #register-popup.active.popup {
+    opacity: 1;
+    z-index: 99999;
+    visibility: visible;
+    margin: 0;
+  } 
+  .popup > h3 {
+    color: #242526;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #d8d8d9;
+    padding: 18px 0 18px 0;
+  }
+  .popup-form > form {
+    float: left;
+    width: 100%;
+    padding: 40px 0;
+    border-bottom: 1px solid #dfe0e5;
+    padding-bottom: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .popup .input-field input[type="checkbox"] + label span {
+    width: 12px;
+    height: 11px;
+    border:1px solid #9b9ca0;
+    border-radius: 2px;
+    margin-top: 5px;
+    display: inline-block;
+  }
+  .popup .input-field input[type="checkbox"] + label span:before {
+    background-image: inherit;
+    border-color: transparent;
+  }
+  .popup .input-field > span {
+    font-size: 13px;
+    margin-top: 2px;
+    padding-left: 8px;
+    color: #9b9ca0;
+  }
+  .form-cp {
+    float: left;
+    width: 100%;
+    margin-top: 7px;
+  }
+  .popup-form .form-field {
+    margin-bottom: 10px;
+  }
+  .form-cp .form-field {
+    width: 50%;
+    float: left;
+  }
