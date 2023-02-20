@@ -222,7 +222,7 @@ return(<ProjectSectionStyles>
      <td > <img style={{height: "5rem", width: "7rem"}} src={product.image} alt=""/> </td>
      <td style={{textAlign:"center"}} >{product.name}</td>
      <td style={{textAlign:"center"}}>{product.price}</td>
-     <td style={{textAlign:"center"}}>{product.category }</td>
+     <td style={{textAlign:"center"}}>{product.category && product.category.name }</td>
     <td style={{textAlign:"center"}}>
   
    <button style={{backgroundColor:"steelblue",marginRight:"1rem",cursor:"pointer", color:"white"}} type="button" className="btn-small"

@@ -144,7 +144,7 @@ const Sidebar = (props) => {
                             return (<>
                             
 
-                            <SideBarSubMenuUser url={getFilterUrl({category: c.name})} item={c} key={index}>
+                            <SideBarSubMenuUser url={getFilterUrl({category: c._id})} item={c} key={index}>
                             <IoIcons.IoMdHelpCircle />
                             </SideBarSubMenuUser>
 </>)

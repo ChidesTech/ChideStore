@@ -14,7 +14,7 @@ productRoute.get("/",expressAsyncHandler(async(req, res)=>{
     const nameFilter = name ? { name: { $regex: name, $options: 'i' }} : {};
     const categoryFilter = category ? { category} : {};
     const count = await Product.countDocuments({ ...nameFilter, ...categoryFilter})
-    const products = await Product.find({ ...nameFilter, ...categoryFilter})
+    const products = await Product.find({ ...nameFilter, ...categoryFilter}).populate("category")
     .skip(pageSize * (page-1)).limit(pageSize);
     res.send( {products, page, pages: Math.ceil(count/pageSize) })
 }))
