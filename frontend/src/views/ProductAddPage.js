@@ -134,7 +134,7 @@ const ProductAddPage =(props)=>{
     <>
 <option style={{padding:"1rem", fontSize:"1.6rem"}}  value="">--Select Category--</option>
 
-{categories.length>0 ? categories.map(category=>(<option style={{padding:"1rem", fontSize:"1.6rem"}}  value={category.name}>{category.name}</option>)
+{categories.length>0 ? categories.map(category=>(<option style={{padding:"1rem", fontSize:"1.6rem"}}  value={category._id}>{category.name}</option>)
    )
    : 
    <option style={{padding:"1rem", fontSize:"1.6rem"}}  value="">No Category Added Yet</option>

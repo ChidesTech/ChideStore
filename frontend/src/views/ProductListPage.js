@@ -236,9 +236,12 @@ return(<ProjectSectionStyles>
     ))}
 </tbody>
          </> ) : <><Popup>No item has been added.</Popup>
-         <button type="button" onClick={createHandler}
-         style={{backgroundColor:"red",marginLeft:"1rem",cursor:"pointer", color:"white" ,padding:"1.5rem 1.5rem"}}
-          className="btn-small">Add First Item <i className="fa fa-plus"></i></button> </>}
+         <Link to={"/add-product"}>
+         <button type="button"  
+         style={{backgroundColor:"steelblue",marginLeft:"1rem",cursor:"pointer", color:"white" ,padding:"1.5rem 1.5rem"}}
+          className="btn-small">Add First Item <i className="fa fa-plus"></i></button>
+         </Link>
+        </>}
       </table>
       {/* <div className="pageBtn">
          { [...Array(pages).keys()].map(x=>{

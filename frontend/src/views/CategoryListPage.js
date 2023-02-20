@@ -96,7 +96,7 @@ return(<>
             {/* <button type="button" onClick={createHandler}
         style={{backgroundColor:"steelblue",marginRight:".5rem",cursor:"pointer", color:"white" ,padding:"1.2rem 1rem"}}
          className="btn-small">Add Category <i className="fa fa-plus"></i></button> */}
-            <Link to="add-category" 
+            <Link to="/add-category" 
         style={{backgroundColor:"steelblue",marginRight:".5rem",cursor:"pointer", color:"white" ,padding:"1.2rem 1rem"}}
          className="btn-small">Add Category <i className="fa fa-plus"></i></Link>
          
@@ -123,9 +123,12 @@ return(<>
     ))}
 </tbody>
          </> ) : <><Popup>No category has been added.</Popup>
-         <button type="button" onClick={createHandler}
-         style={{backgroundColor:"red",marginLeft:"1rem",cursor:"pointer", color:"white" ,padding:"1.5rem 1.5rem"}}
-          className="btn-small">Add First Category <i className="fa fa-plus"></i></button> </>}
+         <Link to={"/add-category"}>
+         <button type="button" 
+         style={{backgroundColor:"steelblue",marginLeft:"1rem",cursor:"pointer", color:"white" ,padding:"1.5rem 1.5rem"}}
+          className="btn-small">Add First Category <i className="fa fa-plus"></i></button> 
+         </Link>
+         </>}
       </table>
 
       )
