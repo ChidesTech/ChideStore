@@ -42,7 +42,7 @@ const Product = ({ product }) => {
 
           <div className="product-name">
             <Link style={{ fontWeight: "bold", textTransform: "capitalize" }} to={`/product/${product._id}`}>
-              {product.name}
+              {product.name?.length > 24 ? <span>{product.name.substr(0, 24)} ...</span> : <span>{product.name}</span> }
             </Link>
           </div>
          

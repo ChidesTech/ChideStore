@@ -89,7 +89,7 @@ const ProductAddPage =(props)=>{
                <input style={{border:"none", display:"none"}} type="file" label="Choose Product" id="imageFile"  onChange={handleFileInputChange}/> 
           </div>
           <div >
-              <input readOnly type="text"  id="image"
+              <input  type="text"  id="image"
                required 
                placeholder="Enter Product Image"
                value={image} onChange={(e)=> setImage(e.target.value)}/>
